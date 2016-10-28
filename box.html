@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boxes on Hover</title>
+
+<style type="text/css">
+a {
+	text-decoration: none;
+	color: #f59031;
+	font-size: 22px;
+}
+.box {
+	border: 1px solid #ccc;
+	width: 17%;
+	height: 200px;
+	margin:auto;
+	text-align:center;
+	font-size: 1.2em;
+	transition: all .3s ease-in-out;
+	margin: 0 10px;
+	float: left;
+}
+
+.box:hover {
+	background-color: rgb(47, 89, 121);
+	color: #fff;
+	font-size: 1em;
+}
+
+.text-display {
+	display: none;
+	transition: all .3s ease-in-out;
+	font-size: 20px;
+	color: #fff;
+}
+
+.box h2 {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 10px;
+	margin: 10px 0;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#tabs {
+	width: 1100px;
+	margin: 40px auto;
+}
+
+.ui-tabs-vertical .ui-tabs-nav { 
+	float: left;
+	list-style: none;
+	margin-top: 0;
+	padding: 0;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li { 
+	margin-bottom: 5px;
+	background: #f59031;
+	border: 2px solid #f59031;
+	border-radius: 5px;
+	transition: background .3s ease-in-out;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li:last-child { 
+	margin-bottom: 0;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li a {
+	padding: 10px 5px;
+	display: block;
+	color: #fff;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li a:hover {
+	color: #f59031;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li:hover {
+	background: #fff;
+}
+
+
+.ui-tabs-vertical .ui-tabs-panel {
+	float: left;
+	width: 70%;
+	padding: 0 25px;
+	height: 345px;
+	border-radius: 5px;
+}
+
+.ui-tabs-vertical .ui-tabs-panel h2 {
+	margin-top: 15px;
+}
+
+.bg-tab {
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.sales {
+	background-image: url(https://www.xactlycorp.com/wp-content/uploads/2012/07/visual_sales2x-1.jpg);
+}
+
+.finance {
+	background-image: url(https://www.xactlycorp.com/wp-content/uploads/2012/07/visual_finance2x.jpg);
+}
+
+.sales-ops {
+	background-image: url(https://www.xactlycorp.com/wp-content/uploads/2012/07/BY_ROLE_SALES_OPS@2x11.jpg);
+}
+
+.sales-enablement {
+	background-image: url(https://www.xactlycorp.com/wp-content/uploads/2012/07/visual_sales2x-1.jpg);
+}
+
+.hr {
+	background-image: url(https://www.xactlycorp.com/wp-content/uploads/2012/07/by_hr-1.jpg);
+}
+
+#tabs .inner {
+	background: #3b6d93;
+	width: 40%;
+	color: #fff;
+	padding: 5px 15px 0;
+	height: 340px;
+
+}
+
+</style>
+</head>
+<body>
+	<div class="clearfix"></div>
+		<h1 style="text-align: center">Lifecycle section</h1>
+	<div class="box">
+
+		<h2>Benchmark</h2>
+
+		<div class="text-display">
+			<p>This is a little write up on what Automatic means.</p>
+
+			<a href="#">LEARN MORE</a>
+
+		</div>
+
+	</div>
+
+	<div class="box">
+
+		<h2>Design</h2>
+		<div class="text-display">
+			<p>This is a little write up on what Designing means.</p>
+
+			<a href="#">LEARN MORE</a>
+
+		</div>
+
+	</div>
+	<div class="box">
+
+		<h2>Motivate</h2>
+		<div class="text-display">
+			<p>This is a little write up on what Motivate means.</p>
+
+			<a href="#">LEARN MORE</a>
+
+		</div>
+
+	</div>
+	<div class="box">
+
+		<h2>Optimize</h2>
+		<div class="text-display">
+			<p>This is a little write up on what Optimize means.</p>
+
+			<a href="#">LEARN MORE</a>
+
+		</div>
+
+	</div>
+	<div class="box">
+
+		<h2>Integrate</h2>
+		<div class="text-display">
+			<p>This is a little write up on what Integrate means.</p>
+
+			<a href="#">LEARN MORE</a>
+
+		</div>
+
+	</div>
+	<div class="clearfix"></div>
+
+
+
+	<div id="tabs">
+		<h1 style="text-align: center">Vertical tabs section</h1>
+		<ul>
+			<li><a href="#tabs-1">Sales</a></li>
+			<li><a href="#tabs-2">Finance</a></li>
+			<li><a href="#tabs-3">Sales Ops</a></li>
+			<li><a href="#tabs-4">HR</a></li>
+			<li><a href="#tabs-5">Sales Enablement (Inspire)</a></li>
+		</ul>
+		
+		<div id="tabs-1" class="bg-tab sales">
+			<div class="inner">
+				<h2>Sales</h2>
+				<h3>Drive Behavior with Real-Time Visibility</h3>
+				<p>Improve the trust between your Finance and Sales departments to retain top talent. Our robust reporting capabilities provide sales rep visibility and ensure your team is always engaged and motivated to maximize and close more deals.</p>
+			</div>
+		</div>
+
+		<div id="tabs-2" class="bg-tab finance">
+			<div class="inner">
+				<h2>Finance</h2>
+				<h3>Take Control of your Incentive Compensation</h3>
+				<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.</p>
+			</div>
+		</div>
+
+		<div id="tabs-3" class="bg-tab sales-ops">
+				<div class="inner">
+				<h2>Sales Ops</h2>
+				<h3>Simplify Your Compensation Management Process</h3>
+				<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+			</div>
+		</div>
+
+		<div id="tabs-4" class="bg-tab hr">
+			<div class="inner">
+				<h2>HR</h2>
+				<h3>Strengthen your MBO Program with Collaboration</h3>
+				<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+			</div>
+		</div>
+
+		<div id="tabs-5" class="bg-tab sales-enablement">
+			<div class="inner">
+				<h2>Sales Enablement (Inspire)</h2>
+				<h3>Take Control of your Incentive Compensation</h3>
+				<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante.</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+	<script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			$('.box').hover( function() {
+				$(this).children('.text-display').show();
+			}, function() {
+				$(this).children('.text-display').hide();
+			});
+
+			$( "#tabs" ).tabs({
+				event: 'mouseover'
+			}).addClass( "ui-tabs-vertical ui-helper-clearfix" );
+			
+			$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+
+
+		});
+	</script>
+</body>
+</html>
